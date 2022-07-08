@@ -10,88 +10,104 @@
       name="description"
       content="small personal cv site. just trying to learn some html"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img
-      src="https://sun9-73.userapi.com/impf/c850428/v850428003/14a923/hSFIgd7gyZs.jpg?size=2048x1534&quality=96&sign=12e0c2805a692f61d711faf886df05b4&type=album"
-      alt="тут должно быть фото"
-      width="400"
-    />
-    <h1>Ilia Afanasev</h1>
-    <p>
-      Мне <strong> 24 года </strong>и я учусь программировать уже
-      <strong> 4 раз.</strong> Сейчас я могу посвящать этому всё своё свободное
-      время.
-    </p>
-    <p>
-      Я люблю <em> путешествовать, играть в компьютерные игры и бегать.</em>
-    </p>
-    <p><strong> Мои хобби:</strong></p>
-    <ol>
-      <li>Компьютерные игры</li>
-      <li>Бег</li>
-      <li>Сериалы</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Место работы</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Craft</td>
-          <td>Официант</td>
-          <td>2014-2015</td>
-        </tr>
-        <tr>
-          <td>Sens</td>
-          <td>COO</td>
-          <td>2015-2017</td>
-        </tr>
-        <tr>
-          <td>Smoking lounge</td>
-          <td>Администратор</td>
-          <td>2017-2020</td>
-        </tr>
-      </tbody>
-    </table>
-    <p><strong> Social media:</strong></p>
-    <p>
-      <a href="https://www.instagram.com/afansev_ilya" target="_blank"
-        >Instagram</a
-      >
-      | <a href="https://t.me/ilia_afanasev" target="_blank">Telegram</a> |
-      <a href="https://vk.com/afanasev_ilya" target="_blank">VK</a>
-    </p>
-    <h2>Связаться со мной</h2>
-    <div>
-      <form>
-        <div>
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Введите имя" />
+    <div class="container">
+      <div class="info">
+        <img
+          src="https://sun9-73.userapi.com/impf/c850428/v850428003/14a923/hSFIgd7gyZs.jpg?size=2048x1534&quality=96&sign=12e0c2805a692f61d711faf886df05b4&type=album"
+          alt="тут должно быть фото"
+          class="avatar"
+        />
+        <div class="info-text">
+          <h1>Илья Афанасьев</h1>
+
+          <p>Основные данные о себе. Lorem ipsum dolor sit amet.</p>
+          <p>
+            Коротко о увлечениях. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </p>
         </div>
-        <div>
-          <label for="email">Ваш email:</label>
-          <input type="email" id="email" placeholder="Введите email" />
-        </div>
-        <div>
-          <label for="message">Ваше сообщение:</label>
-          <br />
-          <textarea
-            id="message"
-            cols="20"
-            rows="5"
-            placeholder="Введите сообщение..."
-          ></textarea>
-        </div>
-        <div>
-          <button type="submit">Отправить</button>
-        </div>
-      </form>
+      </div>
+      <div class="card bg-green">
+        <h2>Мои хобби:</h2>
+        <ol class="list">
+          <li>Компьютерные игры</li>
+          <li>Бег</li>
+          <li>Сериалы</li>
+        </ol>
+      </div>
+      <div class="card bg-red">
+        <h2>Опыт работы:</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Место работы</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>first company</td>
+              <td>CEO</td>
+              <td>2014-2015</td>
+            </tr>
+            <tr>
+              <td>second company</td>
+              <td>COO</td>
+              <td>2015-2017</td>
+            </tr>
+            <tr>
+              <td>third company</td>
+              <td>Position</td>
+              <td>2017-2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-yellow">
+        <h2>Социальные сети:</h2>
+        <p class="link-list">
+          <a
+            href="https://www.instagram.com/afansev_ilya"
+            target="_blank"
+            class="inst"
+            data-title="Деятельность Instagram в России признана экстремистской и запрещена"
+            >Instagram</a
+          >
+          <a href="https://t.me/ilia_afanasev" target="_blank">Telegram</a>
+          <a href="https://vk.com/afanasev_ilya" target="_blank">VK</a>
+        </p>
+      </div>
+      <div class="contacts">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Введите сообщение..."
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Отправить</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

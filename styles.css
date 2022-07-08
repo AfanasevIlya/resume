@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+body {
+   font-size: 16px;
+   font-family: 'Gentium Book Plus', serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: normal;
+   color: #0f141e;
+   background: #f1f1f1;
+}
+
+.container {
+   max-width: 900px;
+   margin: auto;
+   padding-top: 30px;
+}
+
+.info {
+   margin-bottom: 20px;
+   display: flex;
+}
+.info img {
+   width: 300px;
+   border-radius: 25px;
+   box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.35);
+}
+
+
+.info-text {
+   font-style: italic;
+   font-weight: bold;
+   color: #86898f;
+   margin-left: 40px;
+
+}
+
+.card{
+   border-radius: 20px;
+   margin-bottom: 20px;
+   padding: 10px 10px;
+}
+
+.bg-yellow {
+   background: #fff9dc;
+}
+
+.bg-red {
+   background: #ffe5e5;
+}
+
+.bg-green {
+   background: #e5ffe7;
+}
+
+.btn {
+   background: #000;
+   color: #eee;
+   cursor: pointer;
+   border: none;
+   padding: 6px 8px;
+   font-family: inherit;
+}
+
+.btn:hover {
+   color:#f3ebc1;
+   opacity: .8;
+}
+
+a {
+   color: rgb(110, 109, 109);
+   text-decoration: none;
+}
+
+a:hover {
+   transition: all .6s;
+   font-size: 18px;
+   color:rgba(0, 0, 0, 0.35)
+}
+
+.list {
+   padding: 0 20px;
+}
+
+.list li {
+   color: #86898f;
+   margin-bottom: 10px;
+}
+
+.link-list a {
+   padding-right: 10px;
+   padding-left: 10px;
+   border-right: 1px solid rgba(0, 0, 0, 0.35);
+   position: relative;
+}
+
+.link-list a:first-child {
+   padding-left: 0;
+}
+
+.link-list a:last-child {
+   padding-right: 0;
+   border-right: none;
+}
+
+.table {
+   width: 100%;
+}
+
+.table td:nth-child(2), td:nth-child(3) {
+   color: #86898f;
+}
+
+.contacts h2{
+   text-align: center;
+}
+
+.form-row {
+   margin-bottom: 10px;
+   display: flex;
+}
+
+.form-row .form-group {
+   margin-right: 20px;
+   width: 50%;
+      /* display: inline-block; */
+   /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child{
+   margin-right: 0;
+}
+
+@media (max-width: 650px) {
+   .form-row {
+      display: block;
+   }
+
+   .form-row .form-group {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+}
+
+.form-group label {
+   display: block;
+   font-size: 14px;
+   color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   background: transparent;
+   border-bottom: 1px solid #ccc;
+   color: #000;
+   padding: 15px 0 10px;
+   outline: none;
+   font-family: inherit;
+}
+
+@media (max-width: 650px) {
+   .info {
+      display: block;
+      text-align: center;
+   }
+   .info-text {
+      margin-left: 0;
+   }
+}
+
+.inst:hover::after {
+   content: attr(data-title);
+   position: absolute;
+   /* left: 20%; top: 30%; */
+   z-index: 1;
+   background: rgba(105, 105, 105, 0.95);
+   font-family: inherit;
+   font-size:12px;
+   color: black;
+   padding: 5px 10px;
+   border: 1px solid #333;
+}
